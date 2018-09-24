@@ -1,0 +1,23 @@
+[user]
+	email = xx@yy.com
+	name = Thinesh Ganeshalingam
+[color]
+	ui = auto
+[alias]
+	last = log -1 HEAD
+	hist = log --all --graph --decorate --oneline
+[core]
+	editor = notepad++.exe -multiInst -nosession
+[merge]
+    tool = intellij
+[mergetool "intellij"]
+    cmd = cmd.exe //c "\"C:/Program Files/JetBrains/IntelliJ IDEA 2018.2/bin/idea.bat\" merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+    trustExitCode = true
+[mergetool]
+	prompt = false
+[diff]
+    tool = intellij
+[difftool "intellij"]
+    cmd = cmd.exe //c "\"C:/Program Files/JetBrains/IntelliJ IDEA 2018.2/bin/idea.bat\" diff \"$LOCAL\" \"$REMOTE\""
+[difftool]
+	prompt = false
